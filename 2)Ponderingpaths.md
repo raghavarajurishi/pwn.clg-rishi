@@ -12,8 +12,10 @@ Start the challenge, launch a terminal, invoke the pwn program using its absolut
 
 To solve this challenge we should open pwn.I should enter the path to pwn.
 
-```hacker@paths~the-root:~$ /pwn```
-```pwn.college{oanDQI7idEwz_WmPvmSJEX_kU9Z.QX4cTO0wyNwIzNzEzW}```
+```bash
+hacker@paths~the-root:~$ /pwn
+pwn.college{oanDQI7idEwz_WmPvmSJEX_kU9Z.QX4cTO0wyNwIzNzEzW}
+```
 
 ### New Learnings
 If we use "/" its an absolute path.
@@ -31,8 +33,10 @@ This challenge again requires you to execute it by invoking its absolute path. Y
 
 The flag is in the run file which is in challenge directory which is in root(/)directory.We should open run file to solve this challenge.
 
-```hacker@paths~program-and-absolute-paths:~$ /challenge/run```
-```pwn.college{oLxgI9K6GxKgpkbh9h-DR18Ctmq.QX1QTN0wyNwIzNzEzW} ```
+```bash 
+hacker@paths~program-and-absolute-paths:~$ /challenge/run
+pwn.college{oLxgI9K6GxKgpkbh9h-DR18Ctmq.QX1QTN0wyNwIzNzEzW}
+```
 
 ### New Learnings
 Nothing new
@@ -56,10 +60,12 @@ This challenge will require you to execute the /challenge/run program from a spe
 
 To know the flag location, i gave a path, it showed correct path.I opened that directory and gave absolute path to run file which gave me the flag.
 
-```hacker@paths~position-thy-self:~$ /challenge/run```
-```hacker@paths~position-thy-self:~$ cd /tmp```
-```hacker@paths~position-thy-self:/tmp$ /challenge/run```
-```pwn.college{8woM1Pbj6nqMexS5OPDEdxlLWDw.QX2QTN0wyNwIzNzEzW}```
+```bash
+hacker@paths~position-thy-self:~$ /challenge/run
+hacker@paths~position-thy-self:~$ cd /tmp
+hacker@paths~position-thy-self:/tmp$ /challenge/run
+pwn.college{8woM1Pbj6nqMexS5OPDEdxlLWDw.QX2QTN0wyNwIzNzEzW}
+```
 
 ### New Learnings
 cd command is used to open that directory.
@@ -259,4 +265,5 @@ To solve this, we should write a copy of the flag to a specific file and run it.
 ### New Learnings
 cd will use home directory as default destination.
 ### References 
+
 No references 
