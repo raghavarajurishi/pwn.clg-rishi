@@ -89,10 +89,12 @@ This challenge will require you to execute the /challenge/run program from a spe
 
 I gave a path so that it would give me the correct path to the flag file.I used cd command to open the correct directory by giving it the absolute path and opened the file which has flag.
 
-```hacker@paths~position-elsewhere:~$ /challenge/run```
-```hacker@paths~position-elsewhere:~$ cd /usr/share/zoneinfo/posix/Asia```
-```hacker@paths~position-elsewhere:/usr/share/zoneinfo/posix/Asia$ /challenge/run```
-```pwn.college{olTDuTneT5lo1NdqJAG4Jji-lBc.QX3QTN0wyNwIzNzEzW}```
+```bash 
+hacker@paths~position-elsewhere:~$ /challenge/run
+hacker@paths~position-elsewhere:~$ cd /usr/share/zoneinfo/posix/Asia
+hacker@paths~position-elsewhere:/usr/share/zoneinfo/posix/Asia$ /challenge/run
+pwn.college{olTDuTneT5lo1NdqJAG4Jji-lBc.QX3QTN0wyNwIzNzEzW}
+```
 
 ### New Learnings
 Nothing new
@@ -116,10 +118,12 @@ This challenge will require you to execute the /challenge/run program from a spe
 
 I gave a path so that it would give me the correct path to the flag file.I used cd command to open the correct directory by giving it the absolute path and opened the file which has flag.
 
-```hacker@paths~position-yet-elsewhere:~$ /challenge/run```
-```hacker@paths~position-yet-elsewhere:~$ cd /sys```
-```hacker@paths~position-yet-elsewhere:/sys$ /challenge/run```
-```pwn.college{syDT4OCiajWGS-8WEgvvmi-D_nE.QX4QTN0wyNwIzNzEzW} ```
+```bash
+hacker@paths~position-yet-elsewhere:~$ /challenge/run
+hacker@paths~position-yet-elsewhere:~$ cd /sys
+hacker@paths~position-yet-elsewhere:/sys$ /challenge/run
+pwn.college{syDT4OCiajWGS-8WEgvvmi-D_nE.QX4QTN0wyNwIzNzEzW}
+```
 
 ### New Learnings
 You can open any directory no matter where u are by giving cd command and giving it absoluter path.
@@ -149,9 +153,11 @@ Let's try it here! You'll need to run /challenge/run using a relative path while
 
 As given in the problem statement the flag is in root directory.After opening root directory u should enter relative path to the run file.
 
-```hacker@paths~implicit-relative-paths-from-:~$ cd /```
-```hacker@paths~implicit-relative-paths-from-:/$ challenge/run```
-```pwn.college{gLLlngnWpwZCXS0is_hqaFGwn-0.QX5QTN0wyNwIzNzEzW}```
+```bash
+hacker@paths~implicit-relative-paths-from-:~$ cd /
+hacker@paths~implicit-relative-paths-from-:/$ challenge/run
+pwn.college{gLLlngnWpwZCXS0is_hqaFGwn-0.QX5QTN0wyNwIzNzEzW}
+```
 
 ### New Learnings
 A relative path does not start with "/".Current working directory is the directory where my prompt is currently at.
@@ -183,9 +189,11 @@ This challenge will get you using . in your relative paths. Get ready!
 
 As given in the challenge the flag is in root directory.After opening root directory u should use . as it refers right to the same directory.
 
-```cd /```
-```./challenge/run```
-```pwn.college{gWPwLXiiaQ7S7ULSYXj6fmJ4yB4.QXwUTN0wyNwIzNzEzW}```
+```bash 
+cd /
+./challenge/run
+pwn.college{gWPwLXiiaQ7S7ULSYXj6fmJ4yB4.QXwUTN0wyNwIzNzEzW}
+```
 
 ### New Learnings
 . refers to the same directory no matter how many . u use its going to be same.
@@ -210,9 +218,11 @@ We'll explore the mechanisms behind this concept later, but in this challenge, w
 
 The flag is located in the /challenge directory.After opening that directoy we should use . to run the flag file as the linux system might accidentally execute programs in your current directiry which have the same names as core system utilites.
 
-```cd /challenge/```
-```./run```
-```pwn.college{8e5_6U8IxBqw60tBGk0QsjAcBH8.QXxUTN0wyNwIzNzEzW}```
+```bash
+cd /challenge/
+./run
+pwn.college{8e5_6U8IxBqw60tBGk0QsjAcBH8.QXxUTN0wyNwIzNzEzW}
+```
 
 ### New Learnings
 . can also be used to safely open/run files.
@@ -259,11 +269,14 @@ hacker@dojo:~$ /challenge/run YOUR_PATH_HERE
 
 To solve this, we should write a copy of the flag to a specific file and run it.
 
-```hacker@paths~home-sweet-home:~$ /challenge/run ~/r ```
-```pwn.college{M8Xt4ArNiAV596Rkuaa8jJd6zz9.QXzMDO0wyNwIzNzEzW}```
+```bash 
+hacker@paths~home-sweet-home:~$ /challenge/run ~/r 
+pwn.college{M8Xt4ArNiAV596Rkuaa8jJd6zz9.QXzMDO0wyNwIzNzEzW}
+```
 
 ### New Learnings
 cd will use home directory as default destination.
 ### References 
 
 No references 
+
