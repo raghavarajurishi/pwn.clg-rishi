@@ -98,7 +98,7 @@ HINT: The flag always starts with the text pwn.college.
 ### Solve
 **Flag:** `pwn.college{MEtmKPfu6so3iTn6weDri2sn3uN.QX3EDO0wyNwIzNzEzW}`
 
-grep command helps us to search the flag.We use prep command followed by pwn.college as the flag starts with that.
+grep command helps us to search the flag.We use grep command followed by pwn.college as the flag starts with that.
 
 ```bash 
 hacker@commands~grepping-for-a-needle-in-a-haystack:~$ grep pwn.college /challenge/data.txt
@@ -125,7 +125,7 @@ universe
 hacker@dojo:~$ diff file1 file2
 2c2
 < world
----
+
 > universe
 The output tells us that line 2 changed (2c2), with world in the first file (<) being replaced by universe in the second file (>).
 
@@ -150,7 +150,7 @@ Use diff to find what's different between these files and get your flag!
 ### Solve
 **Flag:** `pwn.college{kAxRmBUEVZMO1zvzn-_cy7Nhl2U.01MwMDOxwyNwIzNzEzW}`
 
-We should use diff command to get the difference in two commands and u will get the flag.
+We should use diff command to get the difference between two files and u will get the flag.
 
 ```bash 
 hacker@commands~comparing-files:~$ diff /challenge/decoys_and_real.txt /challenge/decoys_only.txt```
@@ -435,4 +435,5 @@ find command is used to search anything in the root.
 
 ### References 
 No reference.
+
 
